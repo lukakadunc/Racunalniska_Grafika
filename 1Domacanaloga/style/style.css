@@ -1,0 +1,14 @@
+.t1{
+    border: groove;
+    border-color: aqua;
+    background-color: aquamarine;
+}
+.header{
+    background-color: grey;
+}
+
+.t2{
+    border: groove;
+    border-color: red;
+    background-color: aquamarine;
+}
