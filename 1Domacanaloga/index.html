@@ -6,6 +6,7 @@
 
     <!-skripte ->
     <script src ="./scripts/Vector4f.js" type="text/javascript"></script>
+    <script src ="./scripts/matrix4f.js" type="text/javascript"></script>
     <script src ="./scripts/main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./style/style.css" type="text/css">
 
@@ -13,7 +14,7 @@
 
 
 <body onload= "main()">
-
+<!--VEKTORJI-->
 <table class="t1">
     <tr>
         <td>Vsebina vektorja v1:</td>
@@ -24,7 +25,6 @@
         <td id="vectorContent2" />
     </tr>
 </table>
-
 <table class="t1">
     <tr>
         <th class="header">FUNKCIJA</th>
@@ -73,6 +73,53 @@
 
 </table>
 
+<br>
+<br>
+
+<!--MATRIKE -->
+<table class="t1">
+    <tr>
+        <td>Vsebina matrike 1: </td>
+        <td id="matrixContent1" />
+    </tr>
+    <tr>
+        <td>Vsebina matrike 2:</td>
+        <td id="matrixContent2" />
+    </tr>
+</table>
+<table class="t1">
+    <tr>
+        <th class="header">FUNKCIJA</th>
+        <th class="header">REZULTAT</th>
+
+    </tr>
+    <tr>
+        <td>OutNegate</td>
+        <td class="t2" id="matrika"/>
+    </tr>
+
+    <tr>
+        <td>OutAdd</td>
+        <td class="t2" id="matrixOutAdd" />
+
+    </tr>
+    <tr>
+        <td>outTranspose</td>
+        <td class="t2" id="matrixOutTranspose" />
+
+    </tr>
+    <tr>
+        <td>outMultiplySkalar</td>
+        <td class="t2" id="matrikaskalar" />
+
+    </tr>
+    <tr>
+        <td>Multiplyt</td>
+        <td class="t2" id="matrixOutMultiply" />
+
+    </tr>
+
+</table>
 
 </body>
 </html>
