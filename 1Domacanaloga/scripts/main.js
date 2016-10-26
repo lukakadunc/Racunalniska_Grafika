@@ -4,8 +4,8 @@
 
 function main(){
     // Inicializacija vekotrjev in matrik
-    var v1 = new Vector4f(1,2,3,1);
-    var v2 = new Vector4f(3,2,1,1);
+    var v1 = new Vector4f(1,2,3,0);
+    var v2 = new Vector4f(3,2,1,0);
     var v;
     var leteci;
     var skalar = 3;
@@ -15,7 +15,7 @@ function main(){
 
     // Operacije nad vektorji
     document.getElementById("vectorContent1").innerHTML = v1.getInfo();
-    document.getElementById("vectorContent2").innerHTML = v1.getInfo();
+    document.getElementById("vectorContent2").innerHTML = v2.getInfo();
 
         //outNegate
     v = outNegate(v1);
@@ -82,4 +82,9 @@ function main(){
     //Matrix out Multiply
     m1 = outMultiply(m2,m3);
     document.getElementById("matrixOutMultiply").innerHTML = m1.m[0] +'<br>' + m1.m[1] +'<br>'+ m1.m[2] +'<br>' + m1.m[3] +'<br>' ;
+
+
+    //PointManeger
+
+
 }

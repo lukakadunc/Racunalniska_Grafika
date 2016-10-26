@@ -3,10 +3,10 @@
  */
 
 function Vector4f(param1,param2,param3,param4){
-    this.x = param1;
-    this.y = param2;
-    this.z = param3;
-    this.h = param4;
+    this.x = parseInt(param1);
+    this.y = parseInt(param2);
+    this.z = parseInt(param3);
+    this.h = parseInt(param4);
     this.getInfo = function(){
         return '[' + this.x + ' ' + this.y + ' '+ this.z + ' ' + this.h + ']' ;
     };

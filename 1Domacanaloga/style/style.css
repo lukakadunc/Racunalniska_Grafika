@@ -15,5 +15,18 @@
     width: 50px;
  }
 
+#VandM{
+    border: dotted;
+    border-color: black;
+    width: 400px;
+    height: 1000px;
+}
 
-
+#Point{
+    border: dotted;
+    border-color: black;
+    width: 500px;
+    height: 1000px;
+    margin-left: 450px;
+    margin-top: -1000px;
+}
