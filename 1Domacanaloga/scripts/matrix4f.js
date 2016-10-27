@@ -71,14 +71,12 @@ function outMultiply(matrika1,matrika2) {
 
 function outMultiply(matrika1,matrika2) {
     var temp = new Matrix4f();
-    //var transm2 = new Matrix4f();
-    //transm2 = outTranspose(matrika2);
     for(var i=0; i<4; i++){
-        var res=0;
-        for(var j=0; j<4; j++){
-            res+=matrika1[i][j]*matrika2[j][0];
+        for(var j=0;j<4; j++){
+            for(var k=0; k<4; k++){
+                temp.m[i][j] += (matrika1.m[i][k] * matrika2.m[k][i]);
+            }
         }
-        temp[i][0]=res;
     }
     return temp;
 }

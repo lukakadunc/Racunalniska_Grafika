@@ -9,6 +9,7 @@
     <script src ="./scripts/matrix4f.js" type="text/javascript"></script>
     <script src ="./scripts/main.js" type="text/javascript"></script>
     <script src ="./scripts/pointManeger.js" type="text/javascript"></script>
+    <script src ="./scripts/transformation.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./style/style.css" type="text/css">
 
 </head>
@@ -20,12 +21,19 @@
 <div id="VandM">
 <table class="t1">
     <tr>
-        <td>Vsebina vektorja v1:</td>
-        <td id="vectorContent1" />
+        <td>Vsebina vektorja v1:[
+            <textarea class="inputv" id="v1x" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v1y" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v1z" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v1h" rows="1" cols="5">0</textarea> ] </td>
     </tr>
     <tr>
-        <td>Vsebina vektorja v2:</td>
-        <td id="vectorContent2" />
+        <td>Vsebina vektorja v2:[
+            <textarea class="inputv" id="v2x" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v2y" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v2z" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="v2h" rows="1" cols="5">0</textarea>, ]</td>
+
     </tr>
 </table>
 <table class="t1">
@@ -117,7 +125,7 @@
 
     </tr>
     <tr>
-        <td>Multiplyt</td>
+        <td>Multiply</td>
         <td class="t2" id="matrixOutMultiply" />
 
     </tr>
@@ -130,11 +138,66 @@
         v 2 3 1
     </textarea>
     <button type="button" onclick="PointManeger()">Vnos</button>
-    <p id="testizpis"></p>
-    <textarea id="izpisnoPolje" rows="5" cols="50">
-        v 1 2 3
-        v 2 3 1
+    <p id="izpis"></p>
+    <textarea id="izpisnoPolje" rows="20" cols="50">Vnesli ste(x,y,z):
     </textarea>
+
+    <!--<p id="translate1">Vektor:</p>
+    <p id="translate">Transalte;</p>
+    <p id="scale">Scale:</p>
+    <p id="rotateX">Rotate:</p>
+    <p id="rotateY">Rotate:</p>
+    <p id="rotateZ">Rotate:</p>
+    <p id="test">NERADI SINE</p>-->
+
+    <table class="t1">
+        <tr>
+            <td>TRANSLACIJA </td>
+            <td>REZULTAT<td/>
+        </tr>
+        <tr>
+            <td>Translate</td>
+            <td class="t2" id="translate" />
+        </tr>
+        <tr>
+            <td>Scale</td>
+            <td class="t2" id="scale" />
+        </tr>
+        <tr>
+            <td>RotateX</td>
+            <td class="t2" id="rotateX" />
+        </tr>
+        <tr>
+            <td>RotateY</td>
+            <td class="t2" id="rotateY" />
+        </tr>
+        <tr>
+            <td>RotateZ</td>
+            <td class="t2" id="rotateZ" />
+        </tr>
+
+
+    </table>
+
+    <table class="t1">
+        <tr>
+            <td>Vsebina točke ketero bomo transformirali:[
+                <textarea class="inputv" id="v4x" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="v4y" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="v4z" rows="1" cols="5">1</textarea>,
+                1 ] </td>
+        </tr>
+
+    </table>
+
+    <table class="t1">
+        <tr>
+            <td>TransformPoints</td>
+            <td class="t2" id="test" />
+        </tr>
+    </table>
+
+
 </div>
 </body>
 </html>

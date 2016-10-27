@@ -7,11 +7,23 @@ function PointManeger() {
 
     var k = document.getElementById("vnosnoPolje").value;
     //document.getElementById("testizpis").innerHTML = k
-    var tab = [[ ]];
+    var tab = [];
     var intab = [];
+    //tab = k.replace(/\n/g, "").replace(/ +(2= )/g,'').trim().split(" ");
     tab = k.split("v");
+    for(var i=1; i<tab.length; i++){
+
+        document.getElementById("izpisnoPolje").innerHTML += "\n TOCKA: "+tab[i];
 
 
+    }
+
+
+
+
+
+    /*
+    tab = k.split("v");
     //Dela smo za enomesne vektorje
     intab[0] = new Vector4f(tab[1].charAt(1),tab[1].charAt(3),tab[1].charAt(5),1);
     v1 = new Vector4f(tab[1].charAt(1),tab[1].charAt(3),tab[1].charAt(5),1);
@@ -30,4 +42,5 @@ function PointManeger() {
     var trez = new Vector4f();
     trez = outAdd(intab[0],intab[1]);
     //document.getElementById("testizpis").innerHTML = trez.getInfo();
+    */
 }

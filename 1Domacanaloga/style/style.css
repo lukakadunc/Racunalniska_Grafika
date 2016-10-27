@@ -19,14 +19,26 @@
     border: dotted;
     border-color: black;
     width: 400px;
-    height: 1000px;
+    height: 1200px;
 }
 
 #Point{
     border: dotted;
     border-color: black;
-    width: 500px;
-    height: 1000px;
+    width: 800px;
+    height: 1200px;
     margin-left: 450px;
-    margin-top: -1000px;
+    margin-top: -1210px;
+}
+
+.inputv{
+    height: 15px;
+    width: 30px;
+}
+
+.t3{
+    border: groove;
+    border-color: red;
+    background-color: aquamarine;
+
 }

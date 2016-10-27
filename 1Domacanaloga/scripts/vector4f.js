@@ -68,9 +68,9 @@ function outLength(vektor1) {
 function outNormalize(vektor){
     temp = new Vector4f();
     dolzina = outLength(vektor);
-    temp.x = Math.round((vektor.x / dolzina) *10000 ) /10000;
-    temp.y = Math.round((vektor.y / dolzina) *10000 ) /10000;
-    temp.z = Math.round((vektor.z / dolzina) *10000 ) /10000;
+    temp.x = vektor.x / dolzina;
+    temp.y = vektor.y / dolzina;
+    temp.z = vektor.z / dolzina;
     temp.h = vektor.h;
 
     return temp;
