@@ -9,12 +9,19 @@ function PointManeger() {
     //document.getElementById("testizpis").innerHTML = k
     var tab = [];
     var intab = [];
+    var tabvektor =[];
     //tab = k.replace(/\n/g, "").replace(/ +(2= )/g,'').trim().split(" ");
-    tab = k.split("v");
-    for(var i=1; i<tab.length; i++){
+    tab = k.split("\n");
+    for(var i=0; i<tab.length; i++){
+        intab[i]=tab[i].split(" ");
+        tabvektor[i]=new Vector4f(parseFloat(intab[i][0]),parseFloat(intab[i][1]),parseFloat(intab[i][2]), 1);
+    }
 
-        document.getElementById("izpisnoPolje").innerHTML += "\n TOCKA: "+tab[i];
 
+    var rez = new Vector4f();
+    for(var i=0; i<tabvektor.length; i++){
+        rez=transformPoint(tabvektor[i]);
+        document.getElementById("izpisnoPolje").innerHTML += rez.getInfo() +"\n";
 
     }
 

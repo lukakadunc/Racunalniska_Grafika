@@ -3,11 +3,13 @@
  */
 function translate(vektor){
 
+    console.log("Vektor kot vhod");
+    console.log(vektor.getInfo());
     var transMatrika = [
-        [1,0,0,0],
-        [0,1,0,0],
-        [0,0,1,0],
-        [0,0,0,1]
+        [1.0,0.0,0.0,0.0],
+        [0.0,1.0,0.0,0.0],
+        [0.0,0.0,1.0,0.0],
+        [0.0,0.0,0.0,1.0]
     ];
     var tm = new Matrix4f(transMatrika);
 
@@ -103,6 +105,7 @@ function roatateZ(a) {
 
 function mandv(matrika,vektor){
     var temp= new Vector4f();
+
     temp.x = 	matrika.m[0][0] * vektor.x +
         matrika.m[0][1] * vektor.y +
         matrika.m[0][2] * vektor.z +
@@ -141,13 +144,18 @@ function transformPoint(vektor) {
     var pi1= 5*Math.PI/8;
     var transMatrika= new Matrix4f();
 
-
-
     transMatrika=translate(tempX);
+    console.log("vhodna matrika in vektor");
+    console.log(transMatrika.m[0] + '</br>' +
+        transMatrika.m[1] + '</br>' +
+        transMatrika.m[2] + '</br>' +
+        transMatrika.m[3] + '</br>' );
+
+
     vektor=mandv(transMatrika,vektor);
 
-    transMatrika=roatateZ(pi);
-    vektor=mandv(transMatrika,vektor);
+   transMatrika=roatateZ(pi);
+   vektor=mandv(transMatrika,vektor);
 
     transMatrika=translate(tempZ);
     vektor=mandv(transMatrika,vektor);

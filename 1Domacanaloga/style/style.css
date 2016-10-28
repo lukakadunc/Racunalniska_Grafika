@@ -16,19 +16,20 @@
  }
 
 #VandM{
-    border: dotted;
+
     border-color: black;
     width: 400px;
     height: 1200px;
+    background-color: aquamarine;
 }
 
 #Point{
-    border: dotted;
     border-color: black;
-    width: 800px;
+    width: 560px;
     height: 1200px;
     margin-left: 450px;
     margin-top: -1210px;
+    background-color: aquamarine;
 }
 
 .inputv{
@@ -42,3 +43,22 @@
     background-color: aquamarine;
 
 }
+.t4{
+    border: groove;
+    margin-top: 10px;
+    background-color: aquamarine;
+    width: 530px;
+    height: 600px;
+    padding-left: 25px;
+
+}
+
+h1{
+    font-size: medium;
+}
+
+.ta{
+    width: 500px;
+
+}
+

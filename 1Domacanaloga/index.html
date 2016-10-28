@@ -36,6 +36,8 @@
 
     </tr>
 </table>
+
+    <button type="button" onclick="main()">Vnos Vektorjev</button>
 <table class="t1">
     <tr>
         <th class="header">FUNKCIJA</th>
@@ -87,7 +89,7 @@
 <br>
 <br>
 
-<!--MATRIKE -->
+<!--MATRIKE
 <table class="t1">
     <tr>
         <td>Vsebina matrike 1: </td>
@@ -98,6 +100,84 @@
         <td id="matrixContent2" />
     </tr>
 </table>
+
+-->
+<table class="t1">
+    <tr>Vnesite Matriko 1:</tr>
+    <tr>
+        <td>
+            <textarea class="inputv" id="mx1" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mx2" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mx3" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mx4" rows="1" cols="5">1</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea class="inputv" id="my1" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="my2" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="my3" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="my4" rows="1" cols="5">1</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea class="inputv" id="mz1" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mz2" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mz3" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mz4" rows="1" cols="5">1</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea class="inputv" id="mh1" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mh2" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mh3" rows="1" cols="5">1</textarea>,
+            <textarea class="inputv" id="mh4" rows="1" cols="5">1</textarea>
+        </td>
+    </tr>
+
+</table>
+
+    <table class="t1">
+        <tr>Vnesite Matriko 2:</tr>
+        <tr>
+            <td>
+                <textarea class="inputv" id="m2x1" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2x2" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2x3" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2x4" rows="1" cols="5">1</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="inputv" id="m2y1" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2y2" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2y3" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2y4" rows="1" cols="5">1</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="inputv" id="m2z1" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2z2" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2z3" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2z4" rows="1" cols="5">1</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="inputv" id="m2h1" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2h2" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2h3" rows="1" cols="5">1</textarea>,
+                <textarea class="inputv" id="m2h4" rows="1" cols="5">1</textarea>
+            </td>
+        </tr>
+
+    </table>
+
+    <button type="button" onclick="main()">Matrike</button>
+
 <table class="t1">
     <tr>
         <th class="header">FUNKCIJA</th>
@@ -132,16 +212,18 @@
 
 </table>
 </div>
-<div id="Point">
-    <textarea id="vnosnoPolje" rows="5" cols="50">
-        v 1 2 3
-        v 2 3 1
-    </textarea>
+<div  id="Point">
+    <div class="t4"><h1>Transformacije tock:</h1> Vnesite tocke po zgledu: <br>
+    x1 x2 x3 <br>
+    y1 y2 y3 <br>
+    itd..<br>
+
+    <textarea class="ta" id="vnosnoPolje" rows="5" cols="50"></textarea>
     <button type="button" onclick="PointManeger()">Vnos</button>
     <p id="izpis"></p>
-    <textarea id="izpisnoPolje" rows="20" cols="50">Vnesli ste(x,y,z):
-    </textarea>
+    <textarea class="ta" id="izpisnoPolje" rows="20" cols="50"></textarea>
 
+    </div>
     <!--<p id="translate1">Vektor:</p>
     <p id="translate">Transalte;</p>
     <p id="scale">Scale:</p>
@@ -149,6 +231,9 @@
     <p id="rotateY">Rotate:</p>
     <p id="rotateZ">Rotate:</p>
     <p id="test">NERADI SINE</p>-->
+ <br>
+    Vnesite željene stevilke v Vektor 1 in za izracun pritinite gumb "Vnos Vektorjev".
+<br>
 
     <table class="t1">
         <tr>
@@ -179,23 +264,6 @@
 
     </table>
 
-    <table class="t1">
-        <tr>
-            <td>Vsebina točke ketero bomo transformirali:[
-                <textarea class="inputv" id="v4x" rows="1" cols="5">1</textarea>,
-                <textarea class="inputv" id="v4y" rows="1" cols="5">1</textarea>,
-                <textarea class="inputv" id="v4z" rows="1" cols="5">1</textarea>,
-                1 ] </td>
-        </tr>
-
-    </table>
-
-    <table class="t1">
-        <tr>
-            <td>TransformPoints</td>
-            <td class="t2" id="test" />
-        </tr>
-    </table>
 
 
 </div>
